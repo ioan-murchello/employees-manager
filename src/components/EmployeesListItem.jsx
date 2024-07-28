@@ -64,8 +64,8 @@ const EmployeesListItem = ({
           />
         </button>
         <img
-          className={`relative transition-all duration-300 left-5 opacity-0 w-6 h-6 ${
-            isIncreace ? 'left-0 opacity-100' : ''
+          className={`relative transition-all duration-300  w-6 h-6 ${
+            isIncreace ? ' left-0 opacity-100' : 'left-5 opacity-0'
           }`}
           src={star}
           alt='start'
