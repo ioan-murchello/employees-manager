@@ -30,7 +30,7 @@ const EmployeesListItem = ({
   return (
     <li
       style={initialLoad ? { animationDelay: `${index * 100}ms` } : {}}
-      className={`flex flex-col gap-y-4 sm:flex-row justify-between sm:items-center ${
+      className={`flex flex-col gap-y-4 sm:flex-row justify-between sm:items-center pb-4 border-b ${
         isIncreace ? 'text-orange-600 like increase' : ''
       } animate__animated ${initialLoad ? 'animate__fadeInLeft' : ''} ${
         isDelete ? 'animate__zoomOut' : ''
@@ -55,7 +55,7 @@ const EmployeesListItem = ({
         <button
           onClick={onDeleteItem}
           type='button'
-          className='bg-red-200 transition-all duration-300 hover:bg-red-400 rounded-sm p-2 group'
+          className='bg-red-200 transition-all duration-300 sm:hover:bg-red-400 rounded-sm p-2 group'
         >
           <img
             className='w-6 h-6 relative group-hover:-top-[2px]'
